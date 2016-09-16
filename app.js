@@ -1,6 +1,11 @@
 function chunkArrayInGroups(arr, size) {
+  // Array for holding subarrays
   var newArr = [];
-  while(arr.length) newArr.push(arr.splice(0,size));
+
+  // The splice() method changes the content of an array by removing existing
+  // elements and/or adding new elements
+  while(arr.length)
+    newArr.push(arr.splice(0,size));
 
   return newArr;
 }
